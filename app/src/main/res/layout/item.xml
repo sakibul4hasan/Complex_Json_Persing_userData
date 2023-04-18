@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    
+    
+    
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:neumorph_shapeType="basin"
+        >
+
+        <LinearLayout
+            android:id="@+id/itemlly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    >
+                    <ImageView
+                        android:id="@+id/perImg"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/dummy_img"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/perName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terry"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/perAge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Age : 47"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:gravity="start"
+                        />
+                    <TextView
+                        android:id="@+id/perGender"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gender : Male"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#F6F6F6"
+                android:gravity="center"
+                android:weightSum="2"
+                android:padding="8dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/call"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/call"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/sms"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/sms"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+
+</LinearLayout>
